@@ -1,6 +1,6 @@
 #Realiza la misma función que el comando xxd -i en linux
 
-with open("predictor.tflite", "rb") as f:
+with open("converted_model.tflite", "rb") as f:
     data = f.read()
 
 with open("model_data.cc", "w") as f:
